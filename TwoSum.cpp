@@ -33,7 +33,7 @@ public:
 //         int s=0,e=n-1;
 //         while(s<e){
 //             int sum =v[s].first+v[e].first;
-//             if(sum==target)                              // TC -> O(nlogn) Sc->O(n) 
+//             if(sum==target)                              // TC -> O(nlogn) SC->O(n) 
 //                 return {v[s].second,v[e].second};        // this is used when array is sorted
 //             else if(sum>target)
 //                 e--;
