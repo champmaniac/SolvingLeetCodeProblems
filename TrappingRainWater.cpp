@@ -2,23 +2,23 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int n=height.size();
-        int left=0,right=n-1;                 // Two pointer apporach 
+        int l=0,r=n-1;                 // Two pointer apporach 
         int res=0;                            // TC --> O(N)
         int maxleft=0,maxright=0;             // SC --> O(1)      
-        while(left<=right){
-            if(height[left]<=height[right]){
-                if(height[left]>=maxleft)
-                    maxleft=height[left];
+        while(l<=r){
+            if(height[l]<=height[r]){
+                if(height[l]>=maxleft)
+                    maxleft=height[l];
                 else
-                    res+=maxleft-height[left];
-                left++;
+                    res+=maxleft-height[l];
+                l++;
             }
             else{
-                if(height[right]>=maxright)
-                    maxright=height[right];
+                if(height[r]>=maxright)
+                    maxright=height[r];
                 else
-                    res+=maxright-height[right];
-                right--;
+                    res+=maxright-height[r];
+                r--;
             }
         }
         return res;
