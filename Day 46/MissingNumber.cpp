@@ -8,12 +8,10 @@ public:
             else
                 i++;
         }
-        //case 1 for searching
-        for(int j=0;j<n;j++){
-            if(nums[j]!=j)
-                return j;
+        for(int index=0;index<n;index++){
+            if(nums[index]!=index)
+                return index;
         }
-        //case 2 for searching
         return n;
         
         
