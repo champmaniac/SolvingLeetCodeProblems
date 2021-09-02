@@ -1,4 +1,4 @@
-class Solution {
+class Solution {        // DFS Traversal --> TC O(n) SC O(1)
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         if(root==NULL || root==p || root==q) // base
