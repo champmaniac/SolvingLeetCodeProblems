@@ -7,8 +7,8 @@ Class Solution{
 			child+=root->left->val;
 		if(root->right)
 			chiild+=root->right->val;
-		if(child>=root->data)
-			root->data=child;
+		if(child>=root->val)
+			root->val=child;
 		else
 		{
 			if(root->left)
