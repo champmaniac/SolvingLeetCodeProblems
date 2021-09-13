@@ -1,4 +1,4 @@
-class Solution {
+class Solution {  // TC O(N*N)
 public:
     int minPathSum(vector<vector<int>>& dp) {
         int m = dp.size(), n = dp[0].size();
