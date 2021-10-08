@@ -7,7 +7,7 @@ public:
             int consume = gas[i]-cost[i];
             tank+=consume;
             if(tank<0){
-                index+=1;
+                index=i+1;
                 tank=0;
             }
             total+=consume;
