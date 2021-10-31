@@ -11,7 +11,7 @@ public:
             sum_cost+=cost[i];
             max_cost=max(max_cost,cost[i]);
         }
-        res+=max_cost-sum_cost;
+        res+=sum_cost-max_cost;
         return res;
     }
 };
