@@ -19,6 +19,7 @@ class Solution
             {
                 v.push_back(st.top());
             }
+            
             st.push(t);
         }
         reverse(v.begin(),v.end());
