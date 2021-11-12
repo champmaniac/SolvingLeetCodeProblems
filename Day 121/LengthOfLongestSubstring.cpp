@@ -5,7 +5,6 @@ class Solution{
         int i =0,j=0;
         vector<int> m(26,0);
         int res = INT_MIN;
-        int ln;
         while(j<S.size()){
             m[S[j]-'a']++;
             if(m[S[j]-'a']==1){
